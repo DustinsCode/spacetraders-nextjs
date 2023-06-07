@@ -1,10 +1,12 @@
+@import './_colors.scss';
+
 .content {
   min-height: 100vh;
   flex: 1;
-
-  .login {
-    width: 100%;
-  }
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
 
 .footer {

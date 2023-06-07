@@ -1,5 +1,7 @@
 import Head from "next/head";
 import styles from "../styles/page.module.scss";
+import Login from "../components/login";
+import Register from "../components/register";
 
 export default function Home() {
     return (
@@ -7,19 +9,18 @@ export default function Home() {
             <Head>
                 <title> Login | SpaceTraders 🚀⭐️</title>
             </Head>
-          
+
             <main className={styles.content}>
-              <h1>Welcome to SpaceTraders, agent.</h1>
-              <div className={`${styles.login} ${styles.flexColumnCenter}`}>
-                <h3>Please identify yourself:</h3>
-                <input type='password' placeholder="Agent Token"></input>
-              </div>
+                <h1>Welcome to SpaceTraders, agent.</h1>
+                <Login></Login>
+                {/* <Register></Register> */}
             </main>
 
             <footer className={styles.footer}>
-               <div>
-                Made with ❤️ by <a href="https://github.com/dustinscode">DustinsCode</a>
-               </div>
+                <div>
+                    Made with ❤️ by{" "}
+                    <a href="https://github.com/dustinscode">DustinsCode</a>
+                </div>
             </footer>
         </div>
     );
